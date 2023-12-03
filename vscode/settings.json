@@ -1,0 +1,85 @@
+{
+  "workbench.colorTheme": "Community Material Theme Palenight",
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.wordWrap": "on",
+  "vim.useSystemClipboard": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.sideBar.location": "right",
+  "vim.leader": " ",
+  "scrolloff.scrolloff": 8,
+  "vim.smartRelativeLine": true,
+  "files.autoSave": "afterDelay",
+  "window.menuBarVisibility": "toggle",
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "none",
+  "python.analysis.autoImportCompletions": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<Esc>"],
+      "after": ["$"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z"]
+    },
+    {
+      "before": ["+"],
+      "after": ["<C-a>"]
+    },
+    {
+      "before": ["-"],
+      "after": ["<C-x>"]
+    },
+    {
+      "before": ["<C-a>"],
+      "after": ["g", "g", "V", "G"]
+    },
+    {
+      "before": ["<Esc>"],
+      "after": ["$"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    },
+    {
+      "before": ["<Esc>"],
+      "after": ["$"]
+    }
+  ],
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#9b9999",
+    "editorLineNumber.activeForeground": "#9b9999",
+    "statusBar.foreground": "#9b9999"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.activityBar.location": "hidden"
+}
