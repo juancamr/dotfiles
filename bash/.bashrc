@@ -10,7 +10,7 @@ export PATH="$PATH:$HOME/bin"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="purity"
+OSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # OMB_CASE_SENSITIVE="true"
@@ -169,7 +169,7 @@ nav() {
 	local folder
 	#folder=$(find ~ -type d 2>/dev/null | grep -Ev '/(\.git|node_modules)/' | fzf \
 	#--ansi \
-	folder=$(find ~ -mindepth 1 -not -path '*/\.git*' -not -path '*/node_modules*' | fzf \
+	folder=$(find ~ -mindepth 1 -not -path '*/\.git*' -not -path '*/\.cache*' -not -path '*/node_modules*' | fzf \
 		--height=50% \
 		--layout=reverse \
 		--preview="eval \$(~/preview_script.sh {})" \
@@ -204,6 +204,7 @@ execute_script() {
 alias gaa="git add ."
 alias gic="git commit -m"
 alias gst="git status"
+alias g="git"
 
 alias v="nvim"
 alias ebash="v ~/.bashrc"
@@ -229,3 +230,4 @@ alias restart="qtile cmd-obj -o cmd -f restart"
 
 alias msg="firefox --new-tab https://messenger.com"
 alias code_in_path="code_nav; exit"
+alias token="xclip -selection clipboard < $HOME/Documents/env/token_git.txt"
