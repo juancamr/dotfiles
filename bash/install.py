@@ -1,20 +1,19 @@
 import os
 
-try:
-    package: str = input("Enter the package name: ")
 
-    extra = "extra"
-    yay = "yay"
+def install_pacman(package: str):
+    try:
+        if "yay" in package:
+            command = f"yay -S {package.split()[1]}"
+        elif "remove" in package:
+            command = f"sudo pacman -R {package.replace('remove', '')}"
+        else:
+            command = f"sudo pacman -S {package}"
+        os.system(command)
+    except KeyboardInterrupt:
+        print(" Exiting...")
 
-    if extra in package:
-        package = package.split()[1]
-        command = f"sudo pacman -Ss -r {extra} {package}"
-    elif yay in package:
-        package = package.split()[1]
-        command = f'yay -S {package}'
-    else:
-        command = f'sudo pacman -S {package}'
 
-    os.system(command)
-except KeyboardInterrupt:
-    print(' Exiting...')
+if __name__ == "__main__":
+    package = input("Enter the package name: ")
+    install_pacman(package)

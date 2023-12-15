@@ -1,6 +1,5 @@
-"\C-f": "\C-unav\n"
+"\C-g": "\C-unav\n"
 "\C-e": "\C-uls -laF --group-directories\n"
 "\C-t": "\C-utree .\n"
-"\C-w": "\C-upwd\n"
 "\C-a": "\C-upython ~/install.py\n"
-"\C-g": "\C-uranger\n"
+"\C-f": "\C-uranger\n"
